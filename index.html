@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Elikem</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Elikem Hamenoo - CS Student @ Grambling | NVIDIA Intern | Building things that work, then making them faster. Portfolio showcasing projects, work experience, and achievements.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elikem.dev/">
+    <meta property="og:title" content="Elikem Hamenoo - Portfolio">
+    <meta property="og:description" content="CS Student @ Grambling | NVIDIA Intern | Building things that work, then making them faster. Check out my projects, work experience, and achievements.">
+    <meta property="og:image" content="https://elikem.dev/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://elikem.dev/">
+    <meta property="twitter:title" content="Elikem Hamenoo - Portfolio">
+    <meta property="twitter:description" content="CS Student @ Grambling | NVIDIA Intern | Building things that work, then making them faster. Check out my projects, work experience, and achievements.">
+    <meta property="twitter:image" content="https://elikem.dev/og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-text">elikem.dev</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active" data-section="home">Home</a>
+                <a href="work.html" class="nav-link" data-section="work">Where I've Worked</a>
+                <a href="projects.html" class="nav-link" data-section="projects">Projects</a>
+                <a href="other.html" class="nav-link" data-section="other">Other Cool Things</a>
+            </div>
+            <div class="nav-controls">
+                <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <span class="dark-mode-icon">🌙</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Boot Screen Animation Container -->
+    <div id="boot-container" hidden>
+        <div id="boot-screen" class="boot-screen" role="status" aria-live="polite" aria-hidden="false">
+            <div class="boot-content">
+                <div class="boot-line">booting elikem.dev …</div>
+                <div class="boot-line">loading profile … done.</div>
+                <div class="boot-line">welcome.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="terminal-window home-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot maximize"></span>
+                        </div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line main-line">
+                            <span class="prompt">></span><span class="command-text">hello, I'm Elikem</span><span class="cursor-blink">▮</span>
+                        </div>
+                        <div class="terminal-line static-line">
+                            CS @ Grambling | prev. @ NVIDIA | Dreamer
+                        </div>
+                        <div class="terminal-line comment-line">
+                            // I build things that work, then make them faster.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="contact-links">
+                <a href="https://github.com/elikem1z" class="contact-link" title="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/images/github.png" alt="GitHub" class="contact-icon"></a>
+                <a href="https://linkedin.com/in/elikemhamenoo/" class="contact-link" title="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/images/linkedin1.png" alt="LinkedIn" class="contact-icon"></a>
+                <a href="#" class="contact-link" title="Email">✉</a>
+            </div>
+            <div class="ascii-art">
+                <div class="ascii-line">// thanks for visiting</div>
+            </div>
+            <p>Built between classes with Cursor.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
